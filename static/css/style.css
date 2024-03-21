@@ -1,0 +1,206 @@
+/* TODO: from google fonts import Prata font and Poppins with the weights 200, 300, and 400 (1 import) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Prata&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  /* TODO: add the image NightSky.jpeg as a background and set to cover the whole body (2 properties) */
+  background: url("../images/NightSky.jpeg");
+  background-size: cover;
+  /* TODO: Position the background to be bottom (1 property) */
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+header {
+  width: 100vw;
+  height: 90px;
+  /* TODO: set a border of 1px solid white to the bottom of the header (1 property)  */
+  border-bottom: 1px solid white;
+  /* TODO: use flex display and justify the content to have equal space between the items (2 properties) */
+  display: flex;
+  justify-content: space-evenly;
+  /* TODO: set the position of the header to be fixed to the top of the page (1 property)  */
+  position: fixed;
+}
+header > div {
+  display: flex;
+  /* TODO: give it a left margin of 50px (1 property) */
+  margin-left: 50px;
+}
+#tagline {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#tagline > h2 {
+  /* TODO: set the font family to be Poppins with the weight of 400 (2 properties) */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}
+#tagline > p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #ffffff;
+}
+#logo {
+  width: 85px;
+  height: 85px;
+  /* TODO: add a background HV.png (1 property) */
+  background-image: url("../images/HV.png");
+  background-size: cover;
+}
+nav {
+  width: 50%;
+  height: 100%;
+}
+nav > ul {
+  height: 100%;
+  /* TODO: set the display to flex with contents are justified with the equal space between them and vertically aligned to center (3 properties) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+#burger {
+  width: 90px;
+  height: 90px;
+  background-color: #ef3d3a;
+  /* TODO: Add the background image Burger.png (1 property)  */
+  background-image: url("../images/Burger.png");
+  background-size: cover;
+}
+main {
+  width: 100vw;
+  /* TODO: set the height of the main container to be 100vh - 90px (use calc) (1 property)   */
+  height: calc(100vh - 90px);
+  position: absolute;
+  /* position the main container to the bottom of the page (1 property)  */
+  bottom: 0;
+}
+/* TODO: set the css selector to apply this style to the elements with the id "intro" and "offers" (1 selector)  */
+#intro,
+#offers {
+  width: 100vw;
+}
+#intro {
+  height: 60%;
+  /* TODO: set the display to flex with the column direction and align the items vertically and horizontally to be at the center (4 properties) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* TODO: space them apart with a gap of 30px (1 property)  */
+  gap: 30px;
+  margin-top: 2%;
+}
+#offers {
+  height: 35%;
+  /* TODO: set the display to be flex, justifying the item to the center and aligning them in the vertical space to start at the top (3 properties) */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* TODO: create a gap of 30px between the elements (1 property)  */
+  gap: 30px;
+}
+
+#intro > h1 {
+  /* TODO: set the font family to prata with the line height of 75px (2 properties)  */
+  font-family: "Prata", sans-serif;
+  line-height: 75px;
+  font-size: 60px;
+  text-align: center;
+  color: white;
+}
+
+#intro > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 35px;
+  color: white;
+  text-align: center;
+}
+button {
+  height: 80px;
+  font-size: 18px;
+  /* TODO: set a top and bottom padding of 0 and left and right padding of 60px (1 property)  */
+  padding: 0 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  border: none;
+  background-color: #ef3d3a;
+  color: white;
+  margin-top: 25px;
+}
+#offers > article {
+  width: 25%;
+  height: 65%;
+  /* set a background color of #201D2F with an alpha channel of B5 (1 property) */
+  background-color: #201d2fb5;
+  /* TODO: set a 10px rounded corner to the article containers (1 property)  */
+  border-radius: 10px;
+  /* TODO: set the size of the box to be the border-box (1 property)  */
+  box-sizing: border-box;
+  padding: 30px;
+  /* TODO: set the display to flex with the column direction and contents are justified with the equal space between them (3 properties)  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+#offers > article > div {
+  width: 100%;
+  /* TODO: set the display to flex with contents justified with the equal space between them and vertivally align the items to the center (3 properties) */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* TODO: with the css selector target the figure elements in the element with the id "offers" (1 selector) */
+#offers > article > div > figure {
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+}
+#offers p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+  color: white;
+}
+#offers a {
+  /* TODO: make sure the anchor elements doesn't have decorations (1 property)  */
+  text-decoration: none;
+  /* TODO: give them a border of 2px solid #EF3D3A to the bottom of the anchor element (1 property)  */
+  border-bottom: 2px solid #ef3d3a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+#audio {
+  /* TODO: set the Headset.png as background  */
+  background-image: url("../images/Headset.png");
+}
+#program {
+  /* TODO: set the Direction.png as background  */
+  background-image: url("../images/Direction.png");
+}
+#hotel {
+  /* TODO: set the Hotel.png as background  */
+  background-image: url("../images/Hotel.png");
+}
